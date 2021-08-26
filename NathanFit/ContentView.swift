@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello, Nathan!")
-            Text("Hello, Nathan!")
+        TabView {
+            WelcomeView()
+            ForEach(0 ..< 4) { item in
+                ExerciseView(index: item)
+            }
         }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
 
@@ -21,3 +24,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+

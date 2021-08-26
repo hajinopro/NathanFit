@@ -17,6 +17,8 @@
 		D899F5A126D77E550030AA83 /* step-up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D899F59D26D77E550030AA83 /* step-up.mp4 */; };
 		D899F5A326D77EB90030AA83 /* DateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A226D77EB90030AA83 /* DateExtenstion.swift */; };
 		D899F5A526D780780030AA83 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A426D780780030AA83 /* ImageExtension.swift */; };
+		D899F5A726D7906B0030AA83 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A626D7906B0030AA83 /* WelcomeView.swift */; };
+		D899F5A926D790850030AA83 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A826D790850030AA83 /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D899F59D26D77E550030AA83 /* step-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "step-up.mp4"; sourceTree = "<group>"; };
 		D899F5A226D77EB90030AA83 /* DateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtenstion.swift; sourceTree = "<group>"; };
 		D899F5A426D780780030AA83 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		D899F5A626D7906B0030AA83 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D899F5A826D790850030AA83 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			children = (
 				D899F58A26D77DC40030AA83 /* NathanFitApp.swift */,
 				D899F58C26D77DC40030AA83 /* ContentView.swift */,
+				D899F5A626D7906B0030AA83 /* WelcomeView.swift */,
+				D899F5A826D790850030AA83 /* ExerciseView.swift */,
 				D899F5A226D77EB90030AA83 /* DateExtenstion.swift */,
 				D899F5A426D780780030AA83 /* ImageExtension.swift */,
 				D899F58E26D77DC50030AA83 /* Assets.xcassets */,
@@ -168,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D899F5A926D790850030AA83 /* ExerciseView.swift in Sources */,
+				D899F5A726D7906B0030AA83 /* WelcomeView.swift in Sources */,
 				D899F5A326D77EB90030AA83 /* DateExtenstion.swift in Sources */,
 				D899F58D26D77DC40030AA83 /* ContentView.swift in Sources */,
 				D899F58B26D77DC40030AA83 /* NathanFitApp.swift in Sources */,
