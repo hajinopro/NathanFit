@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8786D7626D79975005BD8D3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8786D7526D79975005BD8D3 /* RatingView.swift */; };
 		D899F58B26D77DC40030AA83 /* NathanFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F58A26D77DC40030AA83 /* NathanFitApp.swift */; };
 		D899F58D26D77DC40030AA83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F58C26D77DC40030AA83 /* ContentView.swift */; };
 		D899F58F26D77DC50030AA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D899F58E26D77DC50030AA83 /* Assets.xcassets */; };
@@ -19,9 +20,11 @@
 		D899F5A526D780780030AA83 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A426D780780030AA83 /* ImageExtension.swift */; };
 		D899F5A726D7906B0030AA83 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A626D7906B0030AA83 /* WelcomeView.swift */; };
 		D899F5A926D790850030AA83 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5A826D790850030AA83 /* ExerciseView.swift */; };
+		D899F5AB26D794EE0030AA83 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F5AA26D794EE0030AA83 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8786D7526D79975005BD8D3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		D899F58726D77DC40030AA83 /* NathanFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NathanFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D899F58A26D77DC40030AA83 /* NathanFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NathanFitApp.swift; sourceTree = "<group>"; };
 		D899F58C26D77DC40030AA83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		D899F5A426D780780030AA83 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		D899F5A626D7906B0030AA83 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D899F5A826D790850030AA83 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		D899F5AA26D794EE0030AA83 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				D899F58C26D77DC40030AA83 /* ContentView.swift */,
 				D899F5A626D7906B0030AA83 /* WelcomeView.swift */,
 				D899F5A826D790850030AA83 /* ExerciseView.swift */,
+				D899F5AA26D794EE0030AA83 /* HeaderView.swift */,
+				D8786D7526D79975005BD8D3 /* RatingView.swift */,
 				D899F5A226D77EB90030AA83 /* DateExtenstion.swift */,
 				D899F5A426D780780030AA83 /* ImageExtension.swift */,
 				D899F58E26D77DC50030AA83 /* Assets.xcassets */,
@@ -177,9 +183,11 @@
 				D899F5A926D790850030AA83 /* ExerciseView.swift in Sources */,
 				D899F5A726D7906B0030AA83 /* WelcomeView.swift in Sources */,
 				D899F5A326D77EB90030AA83 /* DateExtenstion.swift in Sources */,
+				D8786D7626D79975005BD8D3 /* RatingView.swift in Sources */,
 				D899F58D26D77DC40030AA83 /* ContentView.swift in Sources */,
 				D899F58B26D77DC40030AA83 /* NathanFitApp.swift in Sources */,
 				D899F5A526D780780030AA83 /* ImageExtension.swift in Sources */,
+				D899F5AB26D794EE0030AA83 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
