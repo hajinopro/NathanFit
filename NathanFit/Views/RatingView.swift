@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct RatingView: View {
-    @Binding var rating: Int
+    @AppStorage("ratings") private var ratings = "4031"
+    @State private var rating = 0
+    let exerciseIndex: Int
     
     let maximumRating = 5
     let offColor = Color.gray
@@ -20,17 +22,31 @@ struct RatingView: View {
                 Image(systemName: "waveform.path.ecg")
                     .foregroundColor(item > rating ? offColor : onColor)
                     .onTapGesture {
-                        rating = item
+                        updateRating(item: item)
+                    }
+                    .onAppear {
+                        let index = ratings.index(ratings.startIndex, offsetBy: exerciseIndex)
+                        let char = ratings[index]
+                        rating = char.wholeNumberValue ?? 0
                     }
             }
         }
         .font(.largeTitle)
     }
+    
+    func updateRating(item: Int) {
+        rating = item
+        let index = ratings.index(ratings.startIndex, offsetBy: exerciseIndex)
+        ratings.replaceSubrange(index ... index, with: String(rating))
+    }
 }
 
 struct RatingView_Previews: PreviewProvider {
+    @AppStorage("ratings") static var ratings: String?
+    
     static var previews: some View {
-        RatingView(rating: .constant(3))
+        ratings = nil
+        return RatingView(exerciseIndex: 0)
             .previewLayout(.sizeThatFits)
     }
 }

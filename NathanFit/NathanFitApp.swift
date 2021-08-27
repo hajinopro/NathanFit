@@ -12,6 +12,9 @@ struct NathanFitApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear(perform: {
+                    print("\(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))")
+                })
         }
     }
 }
