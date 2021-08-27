@@ -13,6 +13,9 @@ struct ExerciseView: View {
     @State private var rating = 0
     @State private var showHistory = false
     @State private var showSuccess = false
+    @State private var timerDone = false
+    @State private var showTimer = false
+    @EnvironmentObject var history: HistoryStore
     
     let index: Int
     let interval: TimeInterval = 3
@@ -36,26 +39,34 @@ struct ExerciseView: View {
                     )
                         .foregroundColor(.red)
                 }
-                Text(Date().addingTimeInterval(interval), style: .timer)
-                    .font(.system(size: 90))
                 HStack(spacing: 150) {
-                    Button("Start Exercise") { }
+                    Button("Start Exercise") {
+                        showTimer.toggle()
+                    }
                     Button("Done") {
+                        history.addDoneExercise(
+                            Exercise.exercises[index].exerciseName)
+                        timerDone = false
+                        showTimer.toggle()
                         if lastExercise {
                             showSuccess.toggle()
                         } else {
                             selectedTab += 1
                         }
                     }
+                    .disabled(!timerDone)
                     .sheet(isPresented: $showSuccess) {
                         SuccessView(selectedTab: $selectedTab)
                     }
                 }
                 .font(.title3)
                 .padding()
+                if showTimer {
+                    TimerView(timerDone: $timerDone)
+                }
                 RatingView(rating: $rating)
-                    .padding()
                 Spacer()
+                    .padding()
                 Button("History") { showHistory.toggle() }
                     .sheet(isPresented: $showHistory) {
                         HistoryView(showHistory: $showHistory)
@@ -69,6 +80,7 @@ struct ExerciseView: View {
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
         ExerciseView(selectedTab: .constant(3), index: 3)
+            .environmentObject(HistoryStore())
     }
 }
 

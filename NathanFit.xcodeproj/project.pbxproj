@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D845048C26D8BA28004758ED /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845048B26D8BA28004758ED /* TimerView.swift */; };
 		D84DEC7C26D86856007BBD87 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DEC7B26D86856007BBD87 /* Exercise.swift */; };
 		D84DEC7E26D86AC9007BBD87 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DEC7D26D86AC9007BBD87 /* HistoryStore.swift */; };
 		D84DEC8126D86CF6007BBD87 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DEC8026D86CF6007BBD87 /* HistoryStoreDevData.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D845048B26D8BA28004758ED /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		D84DEC7B26D86856007BBD87 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D84DEC7D26D86AC9007BBD87 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		D84DEC8026D86CF6007BBD87 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				D8786D7526D79975005BD8D3 /* RatingView.swift */,
 				D8786D7926D7C2D6005BD8D3 /* HistoryView.swift */,
 				D8786D7B26D7C9C3005BD8D3 /* SuccessView.swift */,
+				D845048B26D8BA28004758ED /* TimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D845048C26D8BA28004758ED /* TimerView.swift in Sources */,
 				D899F5A926D790850030AA83 /* ExerciseView.swift in Sources */,
 				D899F5A726D7906B0030AA83 /* WelcomeView.swift in Sources */,
 				D8786D7C26D7C9C3005BD8D3 /* SuccessView.swift in Sources */,
