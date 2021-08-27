@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84DEC7C26D86856007BBD87 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DEC7B26D86856007BBD87 /* Exercise.swift */; };
+		D84DEC7E26D86AC9007BBD87 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DEC7D26D86AC9007BBD87 /* HistoryStore.swift */; };
+		D84DEC8126D86CF6007BBD87 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DEC8026D86CF6007BBD87 /* HistoryStoreDevData.swift */; };
 		D8786D7626D79975005BD8D3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8786D7526D79975005BD8D3 /* RatingView.swift */; };
+		D8786D7A26D7C2D6005BD8D3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8786D7926D7C2D6005BD8D3 /* HistoryView.swift */; };
+		D8786D7C26D7C9C3005BD8D3 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8786D7B26D7C9C3005BD8D3 /* SuccessView.swift */; };
 		D899F58B26D77DC40030AA83 /* NathanFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F58A26D77DC40030AA83 /* NathanFitApp.swift */; };
 		D899F58D26D77DC40030AA83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899F58C26D77DC40030AA83 /* ContentView.swift */; };
 		D899F58F26D77DC50030AA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D899F58E26D77DC50030AA83 /* Assets.xcassets */; };
@@ -24,7 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D84DEC7B26D86856007BBD87 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		D84DEC7D26D86AC9007BBD87 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		D84DEC8026D86CF6007BBD87 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
 		D8786D7526D79975005BD8D3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		D8786D7926D7C2D6005BD8D3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		D8786D7B26D7C9C3005BD8D3 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		D899F58726D77DC40030AA83 /* NathanFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NathanFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D899F58A26D77DC40030AA83 /* NathanFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NathanFitApp.swift; sourceTree = "<group>"; };
 		D899F58C26D77DC40030AA83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +63,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D84DEC7F26D86C36007BBD87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D84DEC7B26D86856007BBD87 /* Exercise.swift */,
+				D84DEC7D26D86AC9007BBD87 /* HistoryStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8786D7826D7C2BC005BD8D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D899F58C26D77DC40030AA83 /* ContentView.swift */,
+				D899F5A626D7906B0030AA83 /* WelcomeView.swift */,
+				D899F5A826D790850030AA83 /* ExerciseView.swift */,
+				D899F5AA26D794EE0030AA83 /* HeaderView.swift */,
+				D8786D7526D79975005BD8D3 /* RatingView.swift */,
+				D8786D7926D7C2D6005BD8D3 /* HistoryView.swift */,
+				D8786D7B26D7C9C3005BD8D3 /* SuccessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D899F57E26D77DC40030AA83 = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				D899F58A26D77DC40030AA83 /* NathanFitApp.swift */,
-				D899F58C26D77DC40030AA83 /* ContentView.swift */,
-				D899F5A626D7906B0030AA83 /* WelcomeView.swift */,
-				D899F5A826D790850030AA83 /* ExerciseView.swift */,
-				D899F5AA26D794EE0030AA83 /* HeaderView.swift */,
-				D8786D7526D79975005BD8D3 /* RatingView.swift */,
+				D84DEC7F26D86C36007BBD87 /* Models */,
+				D8786D7826D7C2BC005BD8D3 /* Views */,
 				D899F5A226D77EB90030AA83 /* DateExtenstion.swift */,
 				D899F5A426D780780030AA83 /* ImageExtension.swift */,
 				D899F58E26D77DC50030AA83 /* Assets.xcassets */,
@@ -92,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D899F59126D77DC50030AA83 /* Preview Assets.xcassets */,
+				D84DEC8026D86CF6007BBD87 /* HistoryStoreDevData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -182,11 +213,16 @@
 			files = (
 				D899F5A926D790850030AA83 /* ExerciseView.swift in Sources */,
 				D899F5A726D7906B0030AA83 /* WelcomeView.swift in Sources */,
+				D8786D7C26D7C9C3005BD8D3 /* SuccessView.swift in Sources */,
 				D899F5A326D77EB90030AA83 /* DateExtenstion.swift in Sources */,
+				D84DEC7E26D86AC9007BBD87 /* HistoryStore.swift in Sources */,
+				D84DEC8126D86CF6007BBD87 /* HistoryStoreDevData.swift in Sources */,
 				D8786D7626D79975005BD8D3 /* RatingView.swift in Sources */,
 				D899F58D26D77DC40030AA83 /* ContentView.swift in Sources */,
+				D84DEC7C26D86856007BBD87 /* Exercise.swift in Sources */,
 				D899F58B26D77DC40030AA83 /* NathanFitApp.swift in Sources */,
 				D899F5A526D780780030AA83 /* ImageExtension.swift in Sources */,
+				D8786D7A26D7C2D6005BD8D3 /* HistoryView.swift in Sources */,
 				D899F5AB26D794EE0030AA83 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
